@@ -1,0 +1,21 @@
+.b-emergente {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+    border-radius: 8px;
+    color: var(--color-primario_Blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primario_Verde);
+    border: 10px solid var(--color-primario_Violeta);
+    @media (max-width: 768px) {
+        width: 80%;
+    }
+
+}

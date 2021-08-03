@@ -1,0 +1,30 @@
+.b-ocultar {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 1s all ease;
+
+    &__active {
+        opacity: 1;
+        height: 200px;
+        overflow: hidden;
+
+        @media (max-width: 550px) {
+            height: 250px;
+        }
+    }
+
+    &__icono {
+        display: none;
+        @media (max-width: 550px) {
+            z-index: 2;
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            display: block;
+        }
+    }
+}
+
+
+

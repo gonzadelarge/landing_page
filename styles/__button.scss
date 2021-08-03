@@ -1,0 +1,35 @@
+/* /////////////////////////    BOTON   //////////////////////////////  */
+
+.b-button {
+    width: 180px;
+    height: 40px;
+    margin: 10px 0;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primario_Blanco);
+    font-size: 16px;
+    font-weight: 700;
+
+    &--verde {
+        background-color: var(--color-primario_Verde);
+        &:hover {
+            color: var(--color-primario_Verde);
+        }
+        
+    }
+    &--violeta {
+        background-color: var(--color-primario_Violeta);
+        &:hover {
+            color: var(--color-primario_Violeta);
+        }
+    }
+
+    &:hover {
+        background-color: var(--color-primario_Blanco);
+        cursor: pointer;
+    }
+}
