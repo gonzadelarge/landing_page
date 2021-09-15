@@ -1,0 +1,10 @@
+.b-progreso {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: var(--progreso);
+    height: 10px;
+    background-color: var(--color-primario_Verde);
+    z-index: 3;
+    opacity: 0;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="js/index.js"></script>
+    <script src="js/agenda.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/team.js"></script>
+    <script src="js/validacion.js"></script>
+</head>
+<body>
+    <div class="b-contenedor"> 
+        <span id="btnMenu" class="b-ocultar__icono b-icono icon-menu"></span>
+        <div class="b-header">
+            <div class="b-header__logo">
+                <img class="b-header__logo__img" src="img/LOGOS/ICONO_GDL_BLANCO_Icono.png" alt="">
+            </div>
+            <div class="b-header__enlaces">
+                <p class="b-header__enlace">Agenda</p>
+                <p class="b-header__enlace">About</p>
+                <p class="b-header__enlace">Contacto</p>
+            </div>
+        </div>
+        <div class="b-section b-imgFondo">
+            <div class="b-absoluto b-section__titular">
+                <div class="b-ocultar b-ocultar__active"></div>
+                <div class="b-flex mt-10">
+                    <button id="mostrarTexto" class="b-button b-button--verde">Ocultar</button>
+                    <button id="cambiarColor" class="b-button b-button--violeta">Cambiar</button>
+                </div>
+            </div>
+        </div>
+        <div id="Agenda" class="b-section b-servicios">
+            <div class="b-section__vertical b-absoluto">
+                <h2>Agenda</h2>
+            </div>
+            <form class="b-formulario" id="form_agenda">
+                <div class="b-formulario__elemento">
+                    <h3>Inserta datos</h3>
+                </div>
+                <div class="b-formulario__elemento" for="client">
+                    <label>Cliente</label>
+                    <input type="text" id="client" name="client" placeholder="Pedro Piqueras">
+                </div>
+                <div class="b-formulario__elemento" for="draft">
+                    <label>Proyecto</label>
+                    <input type="draft" id="draft" name="draft" placeholder="Diseñar pagina web">
+                </div>
+                <div class="b-formulario__elemento" for="date">
+                    <label>Fecha</label>
+                    <input type="text" id="date" name="date" placeholder="00/00/0000">
+                </div>
+                <div class="b-formulario__elemento" for="note">
+                    <label>Comentario</label>
+                    <textarea name="note" id="note" cols="30" rows="10"></textarea>
+                </div>
+                <div class="b-formulario__elemento">
+                    <input class="b-button b-button--verde mx" value="Insertar" type="submit">
+                </div>
+                <div class="b-formulario__elemento__alerta"></div>
+            </form>
+            <div class="b-agenda"></div>
+        </div>
+        <div id="About" class="b-section">
+            <div class="b-section__vertical b-absoluto">
+                <h2>About</h2>
+            </div>
+            <div class="b-section__columna"></div>
+            <div class="b-section__columna b-texto">
+                <h2 class="b-texto__titulo">Equipo</h2>
+                <p class="b-texto__par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni aliquid quo rerum ea ratione eaque! Officiis voluptatum ut totam. Fuga itaque consectetur rerum, corporis aspernatur ex expedita. Maiores, recusandae voluptatum.</p>
+                <h4 class="b-toggle">Ver Equipo</h4>
+                <div class="b-section__links b-modal">
+                    <p>Paula Scher</p>
+                    <p>Javi Garcia</p>
+                    <p>Jaimito Martin</p>
+                </div>
+                <div class="b-section__worker b-modal"></div>
+            </div>
+        </div>
+        <div id="Contacto" class="b-section b-contacto">
+            <div class="b-section__vertical b-absoluto">
+                <h2>Contacto</h2>
+            </div>
+            <form id="form_contacto" class="b-contacto__formulario">
+                <div class="b-formulario__elemento b-contacto__formulario--columna mb-30">
+                    <h2>¿Hablamos?</h2>
+                </div>
+                <div id="b-nombre" class="b-formulario__elemento" for="nombre">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" placeholder="Eustaquio">
+                    <p>Escribe un nombre normal</p>
+                </div>
+                <div id="b-apellido" class="b-formulario__elemento" for="apellido">
+                    <label>Apellido</label>
+                    <input type="text" name="apellido" placeholder="Piesplanos">
+                    <p>¿Ese es tu apellido?</p>
+                </div>
+                <div id="b-email" class="b-formulario__elemento" for="email">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="ejemplo@ejemplo.com">
+                    <p>Eso no es un correo válido</p>
+                </div>
+                <div id="b-asunto" class="b-formulario__elemento" for="asunto">
+                    <label>Asunto</label>
+                    <input type="text" name="asunto" placeholder="Cobrar deudas">
+                    <p>¿Qué quieres recluta?</p>
+                </div>
+                <div class="b-formulario__elemento b-contacto__formulario--columna" for="mensaje">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div class="b-formulario__elemento b-contacto__formulario--columna">
+                    <button class="b-button b-button--verde mx">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div class="b-footer">
+            <div class="b-footer__legacy">
+                <div class="b-footer__legacy__iconos"><a href="#">Instagram</a><div class="b-icono"></div></div>
+                <div class="b-footer__legacy__iconos"><a href="#">FaceBook</a><div class="b-icono"></div></div>
+                <div class="b-footer__legacy__iconos"><a href="#">LinkedIn</a><div class="b-icono"></div></div>
+            </div>
+            <div class="b-footer__button b-formulario__elemento">
+                <label>Suscríbete!</label>
+                <input type="email" id="email2" name="email2" placeholder="Escribe tu correo">
+                <input class="b-button b-button--verde mx" value="Suscribirse" type="submit">
+            </div>
+        </div>
+        <div class="b-progreso"></div>
+        <span class="b-arriba b-icono icon-arrow-up2"></span>
+    </div>
+</body>
+</html>

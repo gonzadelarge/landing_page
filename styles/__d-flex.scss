@@ -1,0 +1,12 @@
+/* /////////////////////////    DISPLAY FLEX   //////////////////////////////  */
+
+.b-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.b-colum {
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}

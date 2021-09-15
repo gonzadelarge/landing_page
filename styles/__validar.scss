@@ -1,0 +1,22 @@
+.correcto {
+    & p {
+        display: none;
+    }
+
+    & input {
+        background-color: var(--color-primario_Verde);
+        color: var(--color-primario_Blanco);
+    }
+}
+
+.incorrecto {
+
+    & p {
+        display: block;
+    }
+
+    & input {
+        color: white;
+        background-color:  var(--color-formulario_Error);
+    }
+}

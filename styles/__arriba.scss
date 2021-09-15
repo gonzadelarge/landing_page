@@ -1,0 +1,19 @@
+.b-arriba {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--color-primario_Blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    &:hover {
+        cursor: pointer;
+        border: transparent;
+        background-color: var(--color-primario_Verde);
+    }
+}

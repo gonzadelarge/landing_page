@@ -1,0 +1,56 @@
+
+@import "styles/__type.scss";
+@import "styles/__reset.scss";
+@import "styles/__variables.scss";
+@import "styles/__header.scss";
+@import "styles/__section.scss";
+@import "styles/__imgFondo.scss";
+@import "styles/__servicios.scss";
+@import "styles/__formulario.scss";
+@import "styles/__button.scss";
+@import "styles/__agenda.scss";
+@import "styles/__texto.scss";
+@import "styles/__toggle.scss";
+@import "styles/__modal.scss";
+@import "styles/__ocultar.scss";
+@import "styles/__contacto.scss";
+@import "styles/__emergente.scss";
+@import "styles/__d-flex.scss";
+@import "styles/__iconos.scss";
+@import "styles/__footer.scss";
+@import "styles/__arriba.scss";
+@import "styles/__progresBar.scss";
+@import "styles/__validar.scss";
+
+
+
+
+body {
+    background-color: var(--color-primario_Oscuro);
+}
+
+.active {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.b-absoluto {
+    position: absolute;
+}
+.d-none {
+    display: none;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+.mx {
+    width: 100%;
+}
+
+
